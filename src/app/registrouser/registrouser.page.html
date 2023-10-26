@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Registro de Usuario nuevo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <h2 class="title">Registrarse</h2>
+    <ion-item>
+      <ion-label position="floating">Nombre de usuario</ion-label>
+      <ion-input type="text" class="normal" [(ngModel)]="user.correo" name="correo" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña (6 dígitos)</ion-label>
+      <ion-input class="normal" type="password"  [(ngModel)]="user.password" name="password"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="register(user)">Registrarse</ion-button>
+  </div>
+</ion-content>
+

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Usuario Registrado
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <h2 class="title">¡Se ha registrado exitosamente!</h2>
+    <p class="description">Le hemos enviado un correo de confirmación y bienvenida a nuestra aplicación.</p>
+    <ion-button expand="block" routerLink="/home">Volver al inicio</ion-button>
+  </div>
+
+</ion-content>
+<ion-content>
+  <ng-container *ngIf="userIsAuthenticated; else notAuthenticated">
+    <!-- Mostrar contenido para usuarios autenticados -->
+    <h2>Bienvenido Usuario Registrado</h2>
+    <!-- Otro contenido personalizado -->
+  </ng-container>
+
+  <ng-template #notAuthenticated>
+    <!-- Mostrar contenido para usuarios no autenticados -->
+    <p>Debes iniciar sesión para acceder a esta página.</p>
+  </ng-template>
+</ion-content>
+
+

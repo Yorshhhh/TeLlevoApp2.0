@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Restablecer contraseña
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="container">
+    <h2 class="title">Restablecer contraseña</h2>
+    <h6>Para recuperar tu contraseña necesitamos que introduzcas tus datos necesarios</h6>
+    <!-- Nombre de usuario -->
+    <ion-item>
+      <ion-label position="floating">Nombre de usuario</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <!-- Contraseña nueva -->
+    <ion-item>
+      <ion-label position="floating">Contraseña nueva</ion-label>
+      <ion-input type="password" maxlength="6"></ion-input>
+    </ion-item>
+    <!-- Contraseña otra vez -->
+    <ion-item>
+      <ion-label position="floating">Contraseña otra vez</ion-label>
+      <ion-input type="password" maxlength="6"></ion-input>
+    </ion-item>
+
+    <!-- Email -->
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+<!-- ------------------ -->
+    <ion-button expand="block" routerLink="/iniciarsesion">Cambiar contraseña</ion-button>
+  </div>
+</ion-content>
+

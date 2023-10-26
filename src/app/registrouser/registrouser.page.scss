@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .title {
+    margin-bottom: 40px;
+    color: aliceblue;
+  }
+  ion-content {
+    --background: rgb(33, 33, 33);
+  }

@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.logo {
+  width: 500px; /* Ajusta el tamaño de la imagen */
+  margin-bottom: 20px;
+
+} 
+
+ion-content {
+  --background: black;
+}
+.fadeIn {
+  animation: fadeInAnimation 1s ease-in;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.floatingImage {
+  animation: floatingAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* --------------------- */
+
+.gradient-bg {
+  background: linear-gradient(45deg, #ffcc00, #ff6600);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+
+
+

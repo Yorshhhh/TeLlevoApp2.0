@@ -1,0 +1,40 @@
+/* Estilos para el fondo negro */
+ion-content {
+    --background: #000;
+    color: #fff;
+  }
+  
+  /* Estilos para la lista de opciones */
+  ion-list {
+    background-color: transparent;
+  }
+  
+  ion-radio-group {
+    border: none;
+  }
+  
+  ion-list-header {
+    color: #fff;
+  }
+  
+  /* Estilos para los radios y etiquetas */
+  ion-item {
+    --highlight-background: transparent;
+  }
+  
+  ion-label {
+    color: #fff;
+  }
+  
+  ion-radio {
+    --color-checked: #11bbeb;
+    --color-unchecked: #fff;
+  }
+  
+  /* Estilos para el botón Guardar */
+  ion-button {
+    --background: #007bff;
+    --color: #fff;
+    margin-top: 20px;
+  }
+  

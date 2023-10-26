@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+  }
+  ion-content {
+    --background: black;
+  }
+  

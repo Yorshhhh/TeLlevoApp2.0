@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tipo de Persona
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-radio-group [(ngModel)]="selectedType">
+      <ion-list-header>
+        Selecciona tu tipo de persona
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Soy Conductor</ion-label>
+        <ion-radio value="conductor"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Soy Pasajero</ion-label>
+        <ion-radio value="pasajero"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-button expand="full" (click)="guardarTipo()">Guardar</ion-button>
+</ion-content>

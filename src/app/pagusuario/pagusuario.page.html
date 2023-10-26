@@ -1,0 +1,54 @@
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Página de Usuario
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid class="ion-text-center">
+      <ion-row>
+        <ion-col size="12">
+          <h2>Bienvenido {{ nombreUsuario }}</h2>
+          <!-- ----------------------------------------- -->
+          <ion-avatar class="profile-pic">
+            <input type="file" (change)="cargarImagen($event)" accept="image/*" capture="camera" style="display: none;" #fileInput />
+            <img [src]="imagenUsuario" alt="Foto del Usuario" (click)="seleccionarImagen(fileInput)" />
+          </ion-avatar>
+
+          <!-- Botoncito -->
+          <ion-button size="small" fill="clear" (click)="irAPageTipoPersona()" class="button-Tipo-Persona">
+            ¿Qué usuario eres?
+          </ion-button>
+          
+          
+          
+
+          
+
+          <!-- ---------------------------------------- -->
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button expand="full" class="button-top">Programar viaje</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button expand="full" class="button-top">Viajes Disponibles</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button expand="full" class="button-bottom">Mi vehiculo</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button expand="full" class="button-bottom">Ajustes</ion-button>
+        </ion-col>
+      </ion-row>
+ <ion-row>
+  <ion-col size="12">
+    <ion-button expand="full" class="button-logout" (click)="cerrarSesion()">Cerrar Sesión</ion-button>
+  </ion-col>
+</ion-row>
