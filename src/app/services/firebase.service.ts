@@ -11,8 +11,8 @@ export class FirebaseService {
     return this.afAuth.authState; // Devuelve un observable del estado de autenticación
   }
 
-  login(email: string, password: string) {
-    return this.afAuth.signInWithEmailAndPassword(email, password);
+  login(correo: string, password: string) {
+    return this.afAuth.signInWithEmailAndPassword(correo, password);
   }
 
   register(correo: string, password: string) {
